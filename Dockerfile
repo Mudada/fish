@@ -1,5 +1,10 @@
-FROM gyeh/purescript:0.9.1
+FROM node:17.0.1
 
-WORKDIR /app
+WORKDIR /code
 
-COPY . ./
+RUN npm install -g spago
+RUN npm install -g purescript
+
+COPY . .
+
+CMD spago build --watch
