@@ -12,7 +12,19 @@ to generate this file without the comments in this block.
 -}
 { name = "my-project"
 , dependencies =
-  [ "console", "effect", "prelude", "psci-support", "react-basic" ]
+  [ "arrays"
+  , "console"
+  , "effect"
+  , "exceptions"
+  , "maybe"
+  , "prelude"
+  , "psci-support"
+  , "react-basic"
+  , "react-basic-dom"
+  , "react-basic-hooks"
+  , "strings"
+  , "web-html"
+  ]
 , packages = ./packages.dhall
 , sources = [ "src/**/*.purs", "test/**/*.purs" ]
 }
